@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    main {
+      width: 100%;
+      height: 1000px;
+      position: absolute;
+    }
+    div {
+      background-color: red;
+      width: 50px;
+      height: 50px;
+      font-size: 30px; 
+      margin: 30px;
+    }
+    .uno {
+      width: 40px;
+      height: 40px;
+      background-color: green;
+      position: relative;
+      z-index: 3;
+    }
+    .dos {
+      background-color: red;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      z-index: 4;
+    }
+    .tres {
+      background-color: blue;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      z-index: 1;
+    }
+  </style>
+
+  <main>
+    <div class="uno">
+      <div class="dos">
+        <div class="tres">
+
+        </div>
+      </div>
+    </div>
+    
+  </main>
+</body>
+</html>
